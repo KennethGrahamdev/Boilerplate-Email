@@ -154,7 +154,15 @@
         <div class="body-bg" style="width: 100%;max-width:600px;margin:0 auto;background-color: #ffffff;">
             <tr>
                 <td>
-                  {Content Goes Here}
+                    <!-- Email body start (prevents lines between sections in MSO) -->
+                    <table role="presentation" cellspacing="0" cellpadding="0" border="0" style="width: 100%;">
+                        <tr>
+                            <td style="text-align:center;">
+                                {Content Goes Here}
+                            </td>
+                        </tr>
+                    </table>
+                    <!-- Email body end (prevents lines between sections in MSO) -->
                 </td>
             </tr>
         </div>
